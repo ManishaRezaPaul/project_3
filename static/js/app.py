@@ -17,9 +17,9 @@ def get_data():
     except Exception as e:
         return jsonify({"error": f"Failed to read JSON file. Reason: {str(e)}"}), 500
 
-@app.route('/', methods=['GET'])
-def homepage():
-    return render_template('index.html')
+# @app.route('/', methods=['GET'])
+# def homepage():
+#     return render_template('index.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
