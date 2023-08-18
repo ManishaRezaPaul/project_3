@@ -43,3 +43,7 @@ d3.select("#selDataset").on("change", function () {
 
 // Call the initialization function to set up the dashboard
 init();
+
+
+// Call the initialization function to set up the dashboard
+init();
