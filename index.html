@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,67 +8,53 @@
   <!-- Add link to stylesheet -->
   <link rel="stylesheet" href="./static/css/style.css">
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="//cdn.amcharts.com/lib/4/core.js"></script>
-  <script src="//cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- Leaflet JavaScript code -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Leaflet heatmap plugin-->
+  <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
+  <!-- <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/locales/de_DE.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/germanyLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/fonts/notosans-sc.js"></script> -->
 </head>
-
-<!-- <body> -->
-
-  <!-- <div class="Dashboard">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>FIFA WORLD CUP STATISTICS OVER THE YEARS</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>FIFA World Cup Years:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <!- <h3 class="panel-title">Demographic Info</h3> -->
-          <!-- </div>
-          <div id="sample-metadata" class="panel-body"></div>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div id="starbust"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="pictorial"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5">
-        <div id="bar"></div>
-      </div>
-    </div>
-  </div>  -->
 
   <body>
     <h1>FIFA WORLD CUP STATISTICS OVER THE YEARS</h1>
     <p>Use the interactive charts below to explore the dataset</p>
     <div class="dashboard">
           <div class="dropdown">
-            <h5>FIFA World Cup Years:</h5>
+            <h4>FIFA World Cup Years:</h4>
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
           </div>
+          <!-- <div class="row">
+            <img src="https://scontent.fyzd1-3.fna.fbcdn.net/v/t39.30808-6/319562657_1467274427132811_2883040108378675441_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=105&ccb=1-7&_nc_sid=110474&_nc_ohc=7aHZSu3-A7kAX-2ZYkz&_nc_ht=scontent.fyzd1-3.fna&oh=00_AfBN6rj8fUFV9pRoWk7QPwhrjnxCffT6KaVyI83op0edcA&oe=64EA75F6" alt="Countries that won the World Cup">
+          </div> -->
           <div class="row">
             <div class="chart large" id="chart1"></div>
             <div class="chart small" id="chart2"></div>
           </div>
-          <div class="row">
-            <div class="chart large" id="chart3"></div>
-            <div class="chart small" id="chart4"></div>
+          <div class="map-title">
+            <h4>Countries qualifying for World Cup</h4>
           </div>
-    </div>
+          <div class="row">
+            <div class="chart large" id="chart3">
+          </div>
+            <div class="chart small" id="chart4">
+              <img id="yearLogo" src="" alt="Year Logo">
+            </div>
+          </div>
+    <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
   <!-- Vizualization links will be added below -->
-  <script src="./static/js/app.js"></script>
+  <script src="./static/js/logic.js"></script>
+  <!-- <script src="./static/js/amcharts.js"></script> -->
   <!-- <script src="./static/js/bonus.js"></script> -->
-
+  <!-- JavaScript file -->
+  <!-- <script type="text/javascript" src="static/js/just-markers.js"></script> -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </body>
-
 </html>
