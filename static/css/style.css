@@ -1,60 +1,47 @@
 body {
-  /* width: 100vw;
-  height: 100vh;  */
-  /* background-color: #009B09; */
   background-color: black;
-  /* background-color: white; */
-  background-image: url(data:image/jpeg;base64,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);
-  /* background-position: bottom right; */
-  /* background-repeat: no-repeat; */
-  /* background-image: url(https://c4.wallpaperflare.com/wallpaper/521/306/413/soccer-ball-football-bw-wallpaper-preview.jpg); */
-  /* background-image: url(https://www.citypng.com/public/uploads/preview/neon-glowing-world-cup-trophy-hd-png-11668962466m2j12pxhwv.png); */
-  background-size: 280px 190px;
-  /* background-size: 240px; */
-  /* background-image: url(https://www.shutterstock.com/shutterstock/videos/1095883939/thumb/1.jpg?ip=x480); */
-  /* background-image: url(https://1000logos.net/wp-content/uploads/2023/05/World-Cup-2026-Logo.jpg); */
-  /* background-image: url("images.png"); */
-  background-position: top right;
-  /* background-position: bottom right; */
+  background-image: url('https://wallpapers.com/images/high/victory-background-omqfjf7fwnkdrj8g.webp');
+  background-size: 1350px 625px;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
 h1 {
-  color: white;
-  /* color: black; */
+  color: goldenrod;
   font-family: "Lucida Console", monospace;
   text-align: center;
 }
+
 p {
   color: whitesmoke;
-  /* color: black; */
   font-family: "Monaco", monospace;
   text-align: center;
 }
-h5 {
+
+h4 {
   color: whitesmoke;
-  /* color: black; */
   font-family: "Monaco", monospace;
   text-align: left;
+  margin: 10px
 }
+
 .dashboard {
   display: flex;
   flex-direction: column;
   align-items: left;
   margin: 20px;
 }
+
+.dropdown select {
+  margin-left: 10px; /* Adjust the value to your desired spacing */
+}
+
+
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
 }
-/* .chart {
-  flex: 2;
-  width: 100px;
-  height: 200px;
-  margin: 10px;
-  border: 1px solid #ccc;
-} */
 
 .chart.large {
   width: 60%;
@@ -68,4 +55,31 @@ h5 {
   height: 300px;
   margin: 10px;
   border: 1px solid #ccc;
+  display: flex; /* Add this to enable flexbox layout */
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+
+#yearLogo {
+  max-width: 100%; /* Ensure the image fits within the container */
+  max-height: 100%; /* Ensure the image fits within the container */
+}
+
+.map-title {
+  /* background-color: black; */
+  /* padding: 5px; */
+  border-radius: 0px;
+  /* box-shadow: 0 1px 5px black; */
+  margin-top: 10px; /* Add margin to the top of the title */
+  /* Remove the position, top, and right properties */
+   z-index: 1000;  
+  /* Ensure the title is on top of the map */
+}
+
+h4 {
+  color: white;
+  font-family: "Monaco", monospace;
+  text-align: left;
+  margin: 10px
 }
