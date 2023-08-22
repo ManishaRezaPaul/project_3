@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FIFA Dashboard</title>
+  <!-- Add link to stylesheet -->
+  <link rel="stylesheet" href="./static/css/style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="//cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="//cdn.amcharts.com/lib/4/charts.js"></script>
+</head>
+
+<!-- <body> -->
+
+  <!-- <div class="Dashboard">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>FIFA WORLD CUP STATISTICS OVER THE YEARS</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>FIFA World Cup Years:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <!- <h3 class="panel-title">Demographic Info</h3> -->
+          <!-- </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="starbust"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="pictorial"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+    </div>
+  </div>  -->
+
+  <body>
+    <h1>FIFA WORLD CUP STATISTICS OVER THE YEARS</h1>
+    <p>Use the interactive charts below to explore the dataset</p>
+    <div class="dashboard">
+          <div class="dropdown">
+            <h5>FIFA World Cup Years:</h5>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </div>
+          <div class="row">
+            <div class="chart large" id="chart1"></div>
+            <div class="chart small" id="chart2"></div>
+          </div>
+          <div class="row">
+            <div class="chart large" id="chart3"></div>
+            <div class="chart small" id="chart4"></div>
+          </div>
+    </div>
+  <!-- Vizualization links will be added below -->
+  <script src="./static/js/app.js"></script>
+  <!-- <script src="./static/js/bonus.js"></script> -->
+
+</body>
+
+</html>
