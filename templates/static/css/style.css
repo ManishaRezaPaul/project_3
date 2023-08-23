@@ -1,0 +1,85 @@
+body {
+  background-color: black;
+  background-image: url('https://wallpapers.com/images/high/victory-background-omqfjf7fwnkdrj8g.webp');
+  background-size: 1350px 625px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: goldenrod;
+  font-family: "Lucida Console", monospace;
+  text-align: center;
+}
+
+p {
+  color: whitesmoke;
+  font-family: "Monaco", monospace;
+  text-align: center;
+}
+
+h4 {
+  color: whitesmoke;
+  font-family: "Monaco", monospace;
+  text-align: left;
+  margin: 10px
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 20px;
+}
+
+.dropdown select {
+  margin-left: 10px; /* Adjust the value to your desired spacing */
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.chart.large {
+  width: 60%;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
+.chart.small {
+  width: 36.5%;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  display: flex; /* Add this to enable flexbox layout */
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+
+#yearLogo {
+  max-width: 100%; /* Ensure the image fits within the container */
+  max-height: 100%; /* Ensure the image fits within the container */
+}
+
+.map-title {
+  /* background-color: black; */
+  /* padding: 5px; */
+  border-radius: 0px;
+  /* box-shadow: 0 1px 5px black; */
+  margin-top: 10px; /* Add margin to the top of the title */
+  /* Remove the position, top, and right properties */
+   z-index: 1000;  
+  /* Ensure the title is on top of the map */
+}
+
+h4 {
+  color: white;
+  font-family: "Monaco", monospace;
+  text-align: left;
+  margin: 10px
+}
